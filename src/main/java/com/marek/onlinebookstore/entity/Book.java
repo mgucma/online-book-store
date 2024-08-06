@@ -28,6 +28,9 @@ public class Book {
     private String description;
     private String coverImage;
 
+    public Book(Object o, String s, String s1, String isbn002, BigDecimal bigDecimal, String s2, String image) {
+    }
+
     // Getters and setters
     public Long getId() {
         return id;
