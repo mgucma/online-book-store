@@ -29,6 +29,9 @@ public class Book {
     private String description;
     private String coverImage;
 
+    @Column(nullable = false)
+    private Boolean isDeleted = false;
+
     // Getters and Setters
 
     public Long getId() {
@@ -85,5 +88,13 @@ public class Book {
 
     public void setCoverImage(String coverImage) {
         this.coverImage = coverImage;
+    }
+
+    public Boolean getIsDeleted() {
+        return isDeleted;
+    }
+
+    public void setIsDeleted(Boolean isDeleted) {
+        this.isDeleted = isDeleted;
     }
 }
