@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: create-book-table
-      author: bw
+      author: marek
       changes:
         - createTable:
             tableName: books
@@ -25,17 +25,18 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: isbn
-                  type: varchar(255)
+                  type: varchar(13)
                   constraints:
                     nullable: false
+                    unique: true
               - column:
                   name: price
-                  type: decimal(15,2)
+                  type: decimal(19,2)
                   constraints:
                     nullable: false
               - column:
                   name: description
-                  type: varchar(255)
+                  type: varchar(4000)
               - column:
                   name: cover_image
                   type: varchar(255)
