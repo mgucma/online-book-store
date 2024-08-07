@@ -32,6 +32,11 @@ public class Book {
     @Column(nullable = false)
     private Boolean isDeleted = false;
 
+
+
+    // Getters and Setters
+
+
     public Long getId() {
         return id;
     }
